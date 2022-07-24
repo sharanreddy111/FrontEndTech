@@ -1,0 +1,95 @@
+/* The external style sheet is generally used when you want to make changes on multiple pages. */
+/* It uses the <link> tag on every pages and the <link> tag should be put inside the head section. */
+/* NOTE : This file should not contain HTML elements. */
+
+
+/* 
+CSS Page Adjustment - Q_01 
+ */
+table,th,td{
+    border: 2px solid black;
+    /* "border-collapse" property collapses table,row and column borders into a single border */
+    border-collapse: collapse;
+    padding: 7px;
+    text-align: center;
+}
+/* "hover" feature change the color of the background and font when we move mouse on it. */
+table:hover{
+    color: blue;
+    background-color: white;
+}
+
+/* 
+CSS Page Adjustment - Q_02
+*/
+span{
+    /* A display property with a value of "block" results in a line break between each span elements. */
+    display: block;
+}
+
+/* 
+CSS Page Adjustment - Q_03
+*/
+a{
+    display: block;
+    text-align: end;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* 
+CSS Page Adjustment - Q_04
+*/
+html{
+    /* Adding "scroll-behavior: smooth" to the <html> element to enable smooth scrolling for the whole page */
+    scroll-behavior: smooth;
+}
+
+/* 
+CSS Page Adjustment - Q_04
+*/
+div.bg1{
+    /* CSS3 allows adding multiple background images for a given element just using a comma-separated list */
+    background-image: url(html.png), url(css.png), url(JavaScript.png);
+    /* background-position property in pixels */
+    background-position: 250px,500px,750px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-size: 200px, 200px, 200px;
+    background-color: white;
+    height: 500px;
+    padding: 10px;
+}
+
+
+/* Below Styles are not part of assignment but used just to make page look better */
+
+h3{
+    background-color: white;
+}
+
+body{
+    /* specifying the values of R, G, B that are in the range of 0 to 255. */
+    background-color: rgb(236, 246, 255);
+    background-image: url(css.png);
+    /* If you set "no-repeat" then the background image will not repeat in the browser */
+    background-repeat: no-repeat;
+    /* If you set "fixed" then the image will not move during scrolling in the browser */
+    background-attachment: fixed;
+    background-size: 250px;
+    background-position: center;
+    padding: 10px;
+}
+
+div.hover:hover{
+    background-color: whitesmoke;
+}
+
+.img-center{
+    /* We can center an image by using the left-margin and right-margin property with value "auto"*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+

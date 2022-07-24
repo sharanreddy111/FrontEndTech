@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Assignment</title>
+    <link rel="stylesheet" href="04.CSS_Compatibility.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <marquee behavior="alternate" style="color: red; background-color: white;">
+            JALA Technologies - CSS Compatibility Assignment ----- <b><i>BY : K.Sharan Simha Reddy</i></b>
+        </marquee>
+        <!-- Icfai and Jala Logo -->
+        <hr><img class="img-center" src="IcfaiJala.png" alt="logo" style="width: 600px;"><hr>
+    </header>
+
+<!-- CSS Effects - Q_01  -->
+        
+        <div class="hover">
+            <h3>Q_01.Create a table and apply table-layout as fixed and none</h3>
+            <li><b>"table-layout : fixed"</b> Sets a fixed table layout algorithm. The table and column widths are set by the widths of table and col or by the width of the first row of cells.</li><br>
+
+            <!-- Table -->
+            <table id="fixed-table">
+                <!-- table row -->
+                <tr>
+                    <!-- "colspan" attribute defines the number of columns a cell should span. -->
+                    <th colspan="3" style="color: blue;">table-layout : fixed</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="color: red;">JALA Academy JOB Ready Program Content</th>
+                </tr>
+                <tr>
+                    <!-- table heading -->
+                    <th>Priority</th>
+                    <th>Subject</th>
+                    <th>Total Days</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Program Introduction</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Programming Essentials</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Developer Essentials</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Testing Essentials</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Web Based Automation</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Whitebox Testing</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Web API Testing</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>RPA-UI Path</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+            <!-- Table -->
+            <table id="none-table">
+                <!-- table row -->
+                <tr>
+                    <!-- "colspan" attribute defines the number of columns a cell should span. -->
+                    <th colspan="3" style="color: blue;">table-layout : none</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="color: red;">JALA Academy JOB Ready Program Content</th>
+                </tr>
+                <tr>
+                    <!-- table heading -->
+                    <th>Priority</th>
+                    <th>Subject</th>
+                    <th>Total Days</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Program Introduction</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Programming Essentials</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Developer Essentials</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Testing Essentials</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Web Based Automation</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Whitebox Testing</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Web API Testing</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>RPA-UI Path</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div><br><hr>
+    
+<!-- CSS Effects - Q_02  -->
+        <div class="hover">
+            <!-- The list-style-type specifies the type of list-item marker in a list. -->
+            <h3>Q_02. Create a list and change its list-style-type.</h3>
+            <p>The list-style-type specifies the type of list-item marker in a list.</p>
+
+            <ul>
+                <li style="list-style-type: disc;"><b>disc</b> : Default value. The marker is a filled circle</li>
+                <li style="list-style-type: circle;"><b>circle</b> : The marker is a circle</li>
+                <li style="list-style-type: square;"><b>square</b> : The marker is a square</li>
+                <li style="list-style-type: decimal;"><b>decimal</b> : The marker is a number</li>
+                <li style="list-style-type: decimal-leading-zero;"><b>decimal-leading-zero</b> : The marker is a number with leading zeros (01, 02, 03, etc.)</li>
+                <li style="list-style-type: upper-alpha;"><b>upper-alpha</b> : The marker is upper-alpha (A, B, C, D, E, etc.) </li>
+                <li style="list-style-type: lower-alpha;"><b>lower-alpha</b> : The marker is lower-alpha (a, b, c, d, e, etc.)</li>
+                <li style="list-style-type: upper-roman;"><b>upper-roman</b> : The marker is upper-roman (I, II, III, IV, V, etc.)</li>
+                <li style="list-style-type: lower-roman;"><b>lower-roman</b> : The marker is lower-roman (i, ii, iii, iv, v, etc.)</li>
+                <li style="list-style-type: none;"><b>none</b> : No marker is shown</li>
+            </ul>
+        </div><hr><br>
+
+<!-- CSS Effects - Q_03  -->
+        <div class="hover">
+
+        </div>
+
+        
+
+
+
+
+    
+</body>
+
+</html>

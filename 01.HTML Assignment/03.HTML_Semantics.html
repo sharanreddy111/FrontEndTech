@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="K.Sharan Simha Reddy">
+    <title>Semantic Elements Assignment</title>
+    <style>
+        a {
+            color: green;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        h4 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        div {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="alternate" style="color: red; background-color: lightgrey;">
+        JALA Technologies - HTML Semantic Elements Assignment ----- <b><i>BY : K.Sharan Simha Reddy</i></b>
+     </marquee>
+    <!-- HTML <header> tag is used as a container of introductory content or navigation links. -->
+    <header>
+        <!-- <hgroup> tag is used to wrap one or more heading elements from <h1> - <h6>. -->
+        <hgroup>
+            <h1 style="color: blue; text-align: center;">JALA-ACADEMY</h1>
+            <h5 style="text-align: center;">DELIVER THE RESULTS</h5>
+        </hgroup>
+        <hr>
+        <!-- HTML <nav> tag is used to represent a section which contains navigation links -->
+        <nav style="padding:20px; background: whitesmoke; text-align: center;">
+            <a href="03.HTML_Semantics.html">HOME</a> |
+            <a href="#jobseekers">JOB SEEKERS</a> |
+            <a href="01.HTML_Basics.html"> HTML</a> |
+            <a href="https://en.wikipedia.org/wiki/CSS">CSS</a> |
+            <a href="https://en.wikipedia.org/wiki/JavaScript">JAVA SCRIPT</a> |
+            <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> |
+            <a href="https://en.wikipedia.org/wiki/JQuery">J QUERY</a> |
+            <a href="https://en.wikipedia.org/wiki/Java">JAVA</a> |
+            <a href="#contact"> ABOUT</a> |
+            <a href="#contact"> CONTACT</a>
+        </nav>
+    </header>
+    <hr><br>
+
+    <!-- HTML <table> tag is used to display data in tabular form -->
+    <table style="width: 100%;">
+        <tr>
+            <td style="background-color: whitesmoke;">
+                <h3> <mark> JALA Academy JOB Ready Program Content</mark></h3>
+                <!-- <article> tag Specifies an independent piece of content of a document -->
+                <article>
+                    <p style="padding:20px;">
+                        The Program is designed to develop the Engineering Skills, so you can fit in
+                        any company and you find an opportunity to give an interview in every
+                        company in the world. Don't Worry about the content, You can easily learn
+                        as everything is practical.
+
+                    </p>
+                    <h2>Registration : </h2>
+                    <p style="font-size: 20px;">
+                        To get registered ---><a href="02.HTML_FormElements.html">Click Here</a>
+                    </p>
+
+                </article>
+            </td>
+            <!-- HTML <td> tag defines table data -->
+            <td style="width: 26%;">
+                <table>
+                    <!-- HTML <tr> tag defines table row -->
+                    <tr>
+                        <!-- HTML <th> tag defines table header -->
+                        <th>Priority</th>
+                        <th>Subject</th>
+                        <th>Total Days</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Program Introduction</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Programming Essentials</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Developer Essentials</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Testing Essentials</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Web Based Automation</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Whitebox Testing</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Web API Testing</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>RPA-UI Path</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- HTML <figure> tag is used to mark up a photo in the document on a web page. -->
+    <figure>
+        <center><img src="IcfaiJala.png" alt="jalaacademy" style="width: 800px;"></center>
+        <!-- HTML <figcaption> tag is used to provide a caption to an image. -->
+        <figcaption style="text-align: center;"> ICFAI_JALA - Internship </figcaption>
+    </figure>
+
+    <!-- The HTML <section> tag is used to define sections in a document -->
+    <section id="jobseekers" style="padding: 20px; background-color: lightgray;">
+        <hr>
+        <h4>FOR JOB SEEKERS</h4>
+        <h1 style="text-align: center; color: deepskyblue;">SUPPORT TILL EMPLOYED</h1>
+        <hr>
+
+        <div>
+            <h4>UNLIMITED OPPORTUNITIES TO BUILD A RIGHT CAREER</h4>
+            <p>We just don't focus to land you a job but strive to offer a sustainable career.We always help you to
+                choose
+                the right Job. We plan your career for a decade and you do not need to worry about job losses in the
+                industry
+            </p>
+        </div><br>
+
+        <div>
+            <h4>ASSESSED POOL OF FRESHERS WITH NEW-AGE SKILLS</h4>
+            <p>We are working with an aim to connect talent with the BEST opportunities. We also provide quick trainings
+                for the candidates to meet your criteria. All our candidates have at least one project development
+                experience and have complete knowledge on SDLC.
+            </p>
+        </div><br>
+
+        <div>
+            <h4>PAY FRESHERS SALARY BUT EXPECT 3+ YEARS EXPERIENCE</h4>
+            <p>We source the trained candidates from different institutes who can perform as par 3+ experience guys in
+                the Industry. Candidates are ready to work on the projects from Day1 with a little domain training. No
+                need to hire a few months before the project beginning.Hire as the need arises.
+            </p>
+        </div><br>
+
+        <div>
+            <h4>SAVE 50% COST ON HIRING</h4>
+            <p>No need to test 100s of resumes as most profiles on job portals are cooked up and it's not so easy to
+                find the trained candidates.our dedicated HRs map the right people to your company requirement
+            </p>
+        </div><br>
+    </section>
+<hr>
+    <footer id="contact" style="padding: 2px; text-align: center; background-color: whitesmoke;">
+        <p><b>CONTACT </b></p>
+        <!-- HTML <address> tag is used to specify the authorship information of the article or webpage -->
+        <address>
+           <b>Address :</b> 3rd Floor,Kaya Building, Rd Number 1, KPHB Colony, Beside SBI NRI Branch, Kukatpally, Hyderabad-500072
+        </address>
+        <p> <b>website :</b> <a href="https://jalaacademy.com/">https://jalaacademy.com/</a></p>
+        <p><b>Designed By</b> <br> K.Sharan Simha Reddy <br>18STUCHH010317</p>
+        <p><b>E-mail : </b>sharan.simha18@ifheindia.org</p>
+
+    </footer>
+</body>
+
+</html>

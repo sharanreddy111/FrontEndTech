@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects Assignment</title>
+    <!-- external style sheet uses the <link> tag which should be put inside the head section. -->
+    <link rel="stylesheet" href="03.CSS_Effects.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <marquee behavior="alternate" style="color: red; background-color: white;">
+            JALA Technologies - CSS Effects Assignment ----- <b><i>BY : K.Sharan Simha Reddy</i></b>
+        </marquee>
+        <!-- Icfai and Jala Logo -->
+        <hr><img class="img-center" src="IcfaiJala.png" alt="logo" style="width: 600px;">
+        <hr>
+    </header>
+
+
+<!-- CSS Effects - Q_03  -->
+    <div class="hover">
+        <h3>Q_03.Adding positions to CSS block (static, relative, fixed, absolute and sticky).</h3>
+
+        <!-- The CSS position property is used to set position for an element. it is also used to place an element behind another  -->
+        <p id="static-position"> This is a by default position for HTML elements. It always positions an element
+            according to the normal flow of the page. It is not affected by the top, bottom, left and right properties.
+        </p>
+
+        <p id="fixed-position"> This is a fix positioned text placed 220px from the top and 0px to right of the page.
+        </p>
+
+        <p id="absolute-position"> This is a absolute positioned text placed 270px from the top and 400px from the left
+            of the page.</p>
+
+        <p id="relative-position"> This is a relative positioned text placed 30px from the element's original left
+            position.</p>
+
+        <!-- <div class="sticky-position">sticky</div> -->
+    </div><br><br><br><br>
+
+
+<!-- CSS Effects - Q_01  -->
+
+    <hr>
+    <div class="hover" style="width: 60%;">
+        <!-- CSS box-shadow property is used to apply one or more shadows to an element. -->
+        <h3>Q_01.Move the mouse on figures to get box-shadow effects</h3><br>
+        <img id="box-blur" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <img id="box-blur-spread" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <img id="box-blur-spread-color" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <img id="box-blur-spread-color-inset" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <img id="box-initial" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <img id="box-none" src="css.png" alt="csslogo" style="width: 100px" ;>
+        <hr>
+
+        <ol>
+            <li>Fig-1 is a shadow box that has h-offset, v-offset and blur attributes.</li>
+            <li>Fig-2 is a box that includes the spread attribute.</li>
+            <li>Fig-3 is a box that includes the color attribute.</li>
+            <li>Fig-4 is a box that includes the inset attribute.</li>
+            <li>Fig-5 is a box that includes the initial attribute.</li>
+            <li>Fig-6 is a box that includes the default attribute i.e. none.</li>
+        </ol>
+    </div><br>
+    <hr>
+
+<!-- CSS Effects - Q_02  -->
+    <div class="hover">
+        <!-- CSS Animation property is used to create animation on the webpage. -->
+        <h3>Q_02.CSS animations (name,duration,iteration-count & delay)</h3>
+        <li>CSS Animation property is used to create animation on the webpage. It can be used as a replacement of
+            animation created by Flash and JavaScript.</li>
+        <li>An animation makes an element change gradually from one style to another. You can add as many as properties
+            you want to add.</li><br>
+        <div id="animation"></div><br><br>
+
+        <!-- CSS pagination is a very useful technique for indexing different pages of a website on the homepage. -->
+        <h3>paginations(Hoverable,with and without spaces).</h3>
+        <p>CSS pagination is a very useful technique for indexing different pages of a website on the homepage. If your website has lots of pages, you have to add some sort of pagination to each page.</p>
+
+        <p>Without Space Between Pagination</p>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+        </ul><br>
+
+        <p>Space Between Pagination</p>
+        <ul class="pagination pagination-space">
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+        </ul>
+
+    </div><br><br>
+
+<!-- CSS Effects - Q_03  -->
+    <div id="overflow-scroll">
+        <h3>Q_04.Handling Overflow using scroll.</h3>
+        <p>The CSS overflow property specifies how to handle the content when it overflows its block level container.
+        </p>
+        <p>CSS Overflow property values :</p>
+        <ul>
+            <li>visible</li>
+            <li>hidden</li>
+            <li>scroll</li>
+            <li>auto</li>
+            <li>inherit</li>
+            <li>initial</li>
+        </ul>
+    </div>
+
+<!-- CSS Effects - Q_05  -->
+    <div>
+        <h3>Q_05.Adding Opacity to a image</h3>
+        <p>The opacity value ranges from 0.1 to 1.0. Lower value produces the greater opacity.</p>
+        <img id="img-opicity" src="IcfaiJala.png" alt="logo" width="40%">
+    </div>
+
+</body>
+
+</html>

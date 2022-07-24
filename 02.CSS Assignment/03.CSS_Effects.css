@@ -1,0 +1,187 @@
+
+/* CSS Effects - Q_01 */
+
+/* CSS box-shadow property is used to apply one or more shadows to an element. */
+
+/* "blur" attribute blurs the box-shadow */
+#box-blur:hover{
+    /* h-offset horizontally sets the shadow position and v-offset vertically */
+    /* box-shadow: h-offset v-offset blur */  
+    box-shadow: 5px 10px 10px;
+    border: 4px solid darkblue;
+}
+/* "spread" sets the shadow size it depends upon the spread value. */
+#box-blur-spread:hover{
+    /* box-shadow: h-offset v-offset blur spread */  
+    box-shadow: 5px 10px 10px 10px;
+    border: 4px solid darkblue;
+}
+/* "color" attribute is used to set the color of the shadow */
+#box-blur-spread-color:hover{
+    /* box-shadow: h-offset v-offset blur spread color */   
+    box-shadow: 5px 10px 10px 10px lightblue;  
+    border: 4px solid darkblue;
+}
+/* "inset" attribute creates shadow within the box */
+#box-blur-spread-color-inset:hover{  
+    /* box-shadow: h-offset v-offset blur spread color inset */   
+  box-shadow: 5px 10px 10px lightblue inset; 
+  border: 4px solid darkblue;
+}  
+/* "initial" attribute is used to set the property of the box-shadow to its default value. */
+#box-initial:hover{  
+    box-shadow: initial;  
+    border: 4px solid darkblue;
+}  
+/* "none" attribute is the default value that does not include any shadow property. */
+#box-none:hover{                
+    box-shadow: none;  
+    border: 4px solid darkblue;
+}
+
+
+/* CSS Effects - Q_02 */
+
+/* To use CSS animation, you must first specify some keyframes for the animation. */
+@keyframes animation {
+    /* By using percent, you can add as many style changes as you like. */
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:250px; top:0px;}
+    50%  {background-color:blue; left:500px; top:0px;}
+    75%  {background-color:green; left:750px; top:0px;}
+    100% {background-color:red; left:1000px; top:0px;}
+}
+
+#animation{
+
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animation;
+    /* animation-duration property defines how long an animation should take to complete */
+    animation-duration: 4s;
+    /* animation-delay property specifies a delay for the start of an animation. */
+    animation-delay: 2s;
+    /* animation-iteration-count property specifies the number of times an animation should run. */
+    animation-iteration-count: infinite;
+}
+
+
+.pagination {
+    display: inline-block;
+}
+.pagination li {display: inline;}
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+/* The margin property is used to get the space between the links in the pagination. */
+.pagination-space li a{
+    margin: 0 4px;
+}
+/* Highlighting the current page with an .active class, */
+.pagination li a.active {
+    background-color: brown;
+    color: white;
+    border: 1px solid grey;
+}
+/* using :hover selector to change the color of each page link when moving the mouse over them */
+.pagination li a:hover:not(.active) {background-color: lightpink;}
+
+
+/* CSS Effects - Q_03 */
+
+/* "static" positioning property is a by default position for HTML elements */
+#static-position{
+    position: static;
+    border: 1px red;
+}
+/* "fixed" attribute fixes the content and doesn't move even you scroll the window. */
+#fixed-position{
+    position: fixed;
+    background-color: whitesmoke;
+    top: 220px;
+    right: 0;
+    border: 1px red;
+}
+/* "relative" positioning property sets the element relative to its normal position. */
+#relative-position{
+    position: relative;
+    left: 30px;
+    border: 1px red;
+}
+/* absolute positioning property can place an element anywhere on a page. */
+#absolute-position{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 270px;
+    left: 400px;
+    border: 1px red;
+}
+div.sticky-position{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    border: 1px red;
+}
+
+/* CSS Effects - Q_04 */
+
+/* "scroll" overflow property sets a scroll bar to see the rest of the content. */
+#overflow-scroll{
+    
+    overflow: scroll;
+    width: 40%;
+    /* If you don't set the height of the box, it will grow as large as the content */
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+
+/* CSS Effects - Q_05 */
+
+/* The opacity value ranges from 0.1 to 1.0. Lower value produces the greater opacity. */
+#img-opicity{
+    opacity: 0.7;
+    
+}
+
+
+/* Below Styles are not part of assignment but used just to make page look better */
+h3{
+    background-color: white;
+}
+div.box-hover:hover{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px; 
+    width: 70%; 
+    padding: 20px;
+}
+
+div.hover:hover{
+    background-color: whitesmoke;
+}
+
+body{
+    /* specifying the values of R, G, B that are in the range of 0 to 255. */
+    background-color: rgb(236, 246, 255);
+    background-image: url(css.png);
+    /* If you set "no-repeat" then the background image will not repeat in the browser */
+    background-repeat: no-repeat;
+    /* If you set "fixed" then the image will not move during scrolling in the browser */
+    background-attachment: fixed;
+    background-size: 250px;
+    background-position: center;
+    padding: 10px;
+}
+/*  We can center an image by using the left-margin and right-margin property with value "auto"*/
+.img-center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+            

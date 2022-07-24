@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Page Adjustments Assignment</title>
+    <!-- external style sheet uses the <link> tag which should be put inside the head section. -->
+    <link rel="stylesheet" href="02.CSS_PageAdjustments.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="top">
+        <marquee behavior="alternate" style="color: red; background-color: white;">
+            JALA Technologies - CSS Page Adjustments Assignment ----- <b><i>BY : K.Sharan Simha Reddy</i></b>
+        </marquee>
+        <!-- Icfai and Jala Logo -->
+        <hr><img class="img-center" src="IcfaiJala.png" alt="logo" style="width: 600px;">
+        <hr>
+    </header>
+
+<!-- CSS Page Adjustment - Q_03  -->
+    <!-- link to go to bottom of the page -->
+    <a href="#bottom">--> click to go to bottom of page</a>
+
+<!-- CSS Page Adjustment - Q_01  -->
+    <div>
+        <h3>Q_01.Changes the color of the background and font when we move the mouse on the table.</h3>
+        <!-- Table -->
+        <table id="#table">
+            <!-- table row -->
+            <tr>
+                <!-- "colspan" attribute defines the number of columns a cell should span. -->
+                <th colspan="3" style="color: red;">JALA Academy JOB Ready Program Content</th>
+            </tr>
+            <tr>
+                <!-- table heading -->
+                <th>Priority</th>
+                <th>Subject</th>
+                <th>Total Days</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Program Introduction</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Programming Essentials</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Developer Essentials</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Testing Essentials</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Web Based Automation</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Whitebox Testing</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Web API Testing</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>RPA-UI Path</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </div><br>
+    <hr>
+
+<!-- CSS Page Adjustment - Q_02  -->
+    <div class="hover">
+        <h3>Q_02.Visibility and Display</h3>
+        <h4>VISIBILITY : </h4>
+        <p>The <b>visibility</b> property specifies whether or not an element is visible.</p>
+        <!-- orderd list -->
+        <ol>
+            <!-- "visible" value specifies that the element is visible. -->
+            <li style="visibility: visible;"><b>visible</b> : Default value. The element is visible</li>
+            <li><b>hidden</b> : The below element is hidden but still takes up space(check list item no.)</li>
+            <!-- "hidden" value specifies that the element is invisible (but still takes up space). -->
+            <li style="visibility: hidden;">This line is hidden</li>
+            <li>
+                <b>collapse</b> : This value removes a row or column, but it does not affect the table layout. The space
+                taken up by the row or column will be available for other content.
+                <!-- table -->
+                <table>
+                    <tr>
+                        <th>visibility</th>
+                        <td>visible</td>
+                        <td>hidden</td>
+                        <!-- "collapse" value is used to remove a row or column, but it does not affect the table layout. -->
+                        <td style="visibility: collapse;">collapse</td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+    </div><br>
+
+    <div class="hover">
+        <h4>DISPLAY : </h4>
+        <!-- unorderd list -->
+        <ul>
+            <li>CSS display is the most important property of CSS which is used to control the layout of the element. It
+                specifies how the element is displayed.</li>
+            <li>Every HTML element has a default display value depending on what type of element it is. The default
+                display value for most elements is <b>block</b> or <b>inline</b>.</li>
+        </ul>
+        <!-- orderd list -->
+        <ol>
+            <li>
+                <!-- The block element takes the full available width makes a line break before and after them. -->
+                <span>
+                    Examples of block-level elements :
+                    <span>div</span><span>h1-h6</span><span>p</span><span>form</span><span>header</span><span>footer</span><span>section</span>
+                </span>
+            </li><br>
+            <li>
+                <!-- here we are using block element(<p>) and changing the elements to inline -->
+                <div>
+                    <!-- The "inline" value takes the required width only and doesn't force the line break -->
+                    Examples of inline elements :
+                    <p style="display: inline;">span, </p>
+                    <p style="display: inline;">a, </p>
+                    <p style="display: inline;">img.</p>
+                </div>
+            </li>
+        </ol>
+        <!-- The "none" value totally removes the element from the page. It will not take any space. -->
+        <p style="display: none;">This is not visible.</p>
+    </div>
+    <hr><br>
+
+
+<!-- CSS Page Adjustment - Q_03  -->
+    <div class="hover">
+        <h3>Q_03 Margin and Padding</h3>
+        <p><b></b>Difference between CSS margin and padding is <b>CSS margin</b> defines the space around elements where
+            as <b>CSS padding</b> is affected by the background colors. It clears an area around the content.</p>
+        <!-- orderd list -->
+        <ol>
+            <li>CSS <b>Margin</b> property is used to define the space around elements. It is completely transparent and
+                doesn't have any background color. It clears an area around the element.</li>
+            <!-- unorderd list -->
+            <ul>
+                <!-- It is used to set all the margin properties in one declaration. -->
+                <li style="margin: 10px">This line has 10px margin all sides</li>
+                <!-- left margin -->
+                <li style="margin-left: 20px;">This line has 20px left margin</li>
+                <!-- top margin -->
+                <li style="margin-top: 10px;">This line has 10px top margin</li>
+                <!-- bottom margin -->
+                <li style="margin-bottom: 10px;">This line has 10px bottom margin</li>
+                <!-- right margin -->
+                <li style="margin-right: 20px;">This line has 20px right margin</li>
+            </ul><br>
+
+            <li>CSS <b>Padding</b> property is used to define the space between the element content and the element
+                border.</li>
+            <!-- orderd list -->
+            <ul>
+                <!-- It is used to set all the padding properties in one declaration. -->
+                <li style="padding: 10px;"> This line has 10px padding all sides</li>
+                <!-- left padding -->
+                <li style="padding-left: 10px;">This line has 10px left padding </li>
+                <!-- top padding -->
+                <li style="padding-top: 10px;">This line has 10px top padding</li>
+                <!-- bottom padding -->
+                <li style="padding-bottom: 10px;">This line has 10px bottom padding</li>
+                <!-- right padding -->
+                <li style="padding-right: 10px;">This line has 10px right padding</li>
+            </ul>
+        </ol>
+    </div><br>
+    <hr>
+
+
+<!-- CSS Page Adjustment - Q_05  -->
+    <!-- class="bg1" has multiple background images -->
+    <div class="bg1">
+        <h3>Q_05.This element has multiple background images with adjustable sizes</h3>
+        <hr>
+        <h4 style="text-align: center; color: navy;">FRONT-END TECHNOLOGIES</h4>
+    </div>
+    <hr><br>
+
+ <!-- CSS Page Adjustment - Q_03  -->
+    <!-- footer -->
+    <footer id="bottom">
+        <!-- link to go to top of the page -->
+        <a href="#top">--> click to go to top of page</a>
+    </footer>
+
+</body>
+
+</html>

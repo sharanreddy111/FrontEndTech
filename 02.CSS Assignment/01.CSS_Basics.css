@@ -1,0 +1,63 @@
+/* The external style sheet is generally used when you want to make changes on multiple pages. */
+/* It uses the <link> tag on every pages and the <link> tag should be put inside the head section. */
+/* NOTE : This file should not contain HTML elements. */
+
+
+/* CSS Basics Assignment - Q_02 */
+body{
+    /* specifying the values of R, G, B that are in the range of 0 to 255. */
+    background-color: rgb(236, 246, 255);
+    background-image: url(css.png);
+    /* If you set "no-repeat" then the background image will not repeat in the browser */
+    background-repeat: no-repeat;
+    /* If you set "fixed" then the image will not move during scrolling in the browser */
+    background-attachment: fixed;
+    background-size: 250px;
+    background-position: center;
+    padding: 10px;
+}
+img{
+    /* We can center an image by using the left-margin and right-margin property */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+p{
+    text-align: center;
+}
+
+/* CSS Basics Assignment - Q_03, Q_04 */
+
+/* 4 border-style(different borders on each side with different patterns) */
+#borders{
+    background-color: whitesmoke;
+    border: 2px solid darkblue;
+    /* top border is dashed
+    right border is solid
+    bottom border is dotted
+    left border is double */
+    border-style: dashed solid dotted double;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 600px;
+}
+/* CSS "border-style" property is used to specify the border type */
+.none {border-style: none;}
+/* CSS "border-width" property is used to set the border's width. */
+.dotted {border-style: dotted;border-width: 3px; border-color: darkblue;}  
+/* single value (such as border-radius: 90px;) will set all corners to the same value */
+.dashed {border-style: dashed; border-radius: 90px; background-color:rgb(215, 235, 252);} 
+/* first value : top-left and bottom-right corners,
+  second value : top-right and bottom-left corners */
+.solid {border-style: solid; border-radius: 100% 50%;}  
+.double {border-style: double; border-radius: 90px 45px;}  
+.groove {border-style: groove;border-top-left-radius: 30px;}  
+.ridge {border-style: ridge; border-top-right-radius: 20px;}  
+.inset {border-style: inset;border-bottom-left-radius: 25%;}  
+.outset {border-style: outset; border-bottom-right-radius: 25%;}  
+.hidden {border-style: hidden;}  
+
+div.hover:hover{
+    background-color: whitesmoke;
+}

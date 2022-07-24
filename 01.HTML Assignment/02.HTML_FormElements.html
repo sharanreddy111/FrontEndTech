@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="K.Sharan Simha Reddy">
+    <title>FormElements</title>
+</head>
+
+<body>
+    <h1 style="color: blue; text-align: center;">JALA-ACADEMY</h1>
+    <hr>
+
+    <!-- HTML <marquee> tag is used to scroll a image or text horizontally or vertically. -->
+    <marquee behavior="alternate" style="color: red; background-color: lightgrey;">
+        We have an excellent training program to transform you as a competent Software Engineer within <b>60 Days.</b>
+    </marquee>
+    <br>
+    <hr>
+
+    <a href="03.HTML_Semantics.html" style="color: green;"> HOME </a>
+
+    <h3>Registration Form</h3>
+
+    <form action="home.html" method="post" target="_blank" style="padding: 10px;">
+        <!-- type="text" - Defines a one-line text input field -->
+        <!-- MAXLENGTH attribute specifies the maximum number of characters that have been allowed in the Element -->
+        <!-- PLACEHOLDER attribute specifies a text within an input field -->
+        <label for="uname">User Name : </label>
+        <input type="text" id="uname" name="uname" maxlength="20" placeholder="Enter User Name"><br><br>
+
+        <!-- type="password" - Defines a one-line password input field -->
+        <label for="pass">Password : </label>
+        <input type="password" id="pass" name="pass" maxlength="10" placeholder="Create New Password">
+        <br><br>
+
+        <label for="repass">Re-type Password : </label>
+        <input type="password" id="repass" name="repass" maxlength="10" placeholder="re-type Password">
+        <br><br>
+
+        <!-- type="email" - Defines an input field for entering an email address. -->
+        <label for="uemail">E-mail Address :</label>
+        <input type="email" name="uemail" id="uemail" placeholder="@gmail.com">
+        <br><br>
+
+        <!-- type="tel" - Defines an input field to enter a telephone number. -->
+        <label for="phoneNo">Phone Number :</label>
+        <input type="tel" name="phoneNo" id="phoneNo" placeholder="Enter Phone Number">
+        <br><br>
+
+        <!-- type="radio" - Defines a radio button which allows select one option. -->
+        <label>Gender :</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others" value="others">
+        <br><br>
+
+        <!-- type="date" - Defines an input field for selection of date. -->
+        <label for="dob">Date of Birth : </label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <!-- READONLY - specifies user can not modify or change a content already present -->
+        <label>Nationality :</label>
+        <input type="text" name="Country" value="India" readonly>
+        <br><br>
+
+        <!-- type="checkbox" - Defines checkboxes which allow select multiple options form. -->
+        <label>Intrested in : </label>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="lang1" id="html" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="lang2" id="css" value="css">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="lang3" id="javascript" value="javascript">
+        <br><br>
+
+        <!-- type="range" - Defines to select range in a form. -->
+        <label for="percentage">Btech Percentage : </label>
+        <input type="range" name="percentage" id="percentage" min="50" max="100" value="60">
+        <br><br>
+
+        <!-- type="number" - Defines an input field to enter a number. -->
+        <!-- MIN & MAX prevents the input element from accepting values that are lower than the minimum value 
+            or higher than the maximum value-->
+        <label for="experience">Experience in Years(1-8) :</label>
+        <input type="number" name="experience" id="experience" min="1" max="8">
+        <br><br>
+
+        <!-- type="file" - Defines to select the file from device storage. -->
+        <label for="resume">Upload your resume : </label>
+        <input type="file" name="resume" id="resume">
+        <br><br>
+
+        <!-- option - Defines a option button which allows select one option. -->
+        <label for="course">Select Course : </label>
+        <select>
+            <option value="none">none</option>
+            <option value="JAVA">JAVA</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+        <br><br>
+
+        <!-- type="week" - Defines a field to enter the date with week-year, without time zone. -->
+        <label for="uweek">In which week would you like to start course : </label>
+        <input type="week" name="uweek" id="uweek">
+        <br><br>
+
+        <!-- type="time" - Defines a field to enter the time. -->
+        <label for="classTimings">Class Timings :</label>
+        <input type="time" name="classTimings" id="classTimings"> -
+        <input type="time" name="classTimings" id="classTimings">
+        <br><br>
+
+        <!-- type="color - Defines an input field with a specific color. -->
+        <label for="favcolor">Select your favorite color :</label>
+        <input type="color" name="favcolor" id="favcolor" value="#ff0000">
+        <br><br>
+
+        <!-- type="submit" - Defines a submit button to submit the form to server -->
+        <input type="submit" value="submit">
+
+        <!-- type="reset" - Defines a reset button to reset all values in the form. -->
+        <input type="reset" value="reset">
+        <br><br><br><br>
+
+    </form>
+</body>
+
+</html>
